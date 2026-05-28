@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Red · 2010 VW Beetle For Sale · Clayton, OH</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <meta name="description" content="2010 VW Beetle (Little Red) for sale by owner in Clayton, OH. Cherry red, 110,435 miles, clean title, excellent records, 0 open NHTSA recalls. $6,995." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Little Red · 2010 VW Beetle For Sale" />
+  <meta property="og:description" content="2010 VW Beetle for sale by owner in Clayton, OH. Cherry red, 110,435 miles, clean title, excellent records. $6,995." />
+  <meta property="og:image" content="https://donnasbug.com/og-card.jpg" />
+  <meta property="og:url" content="https://donnasbug.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Little Red · 2010 VW Beetle For Sale" />
+  <meta name="twitter:description" content="2010 VW Beetle for sale by owner in Clayton, OH. Cherry red, 110,435 miles, clean title, excellent records. $6,995." />
+  <meta name="twitter:image" content="https://donnasbug.com/og-card.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:    #C41010;
+      --yellow: #F2BC1B;
+      --orange: #E8620A;
+      --green:  #4A7C2F;
+      --purple: #7D2B8C;
+      --cream:  #FFF6DC;
+      --dark:   #1E0B02;
+      --white:  #FFFEF5;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--cream); color: var(--dark); font-family: 'Nunito', sans-serif; overflow-x: hidden; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--cream); padding: 12px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 200;
+      border-bottom: 5px solid var(--red);
+    }
+    .h-logo { font-family: 'Fredoka', sans-serif; font-size: 1.25rem; color: var(--red); display:flex; align-items:center; gap:10px; }
+    .h-dot  { width:12px; height:12px; background:var(--green); border-radius:50%; display:inline-block; }
+    .h-cta  {
+      background: var(--red); color: var(--white); font-family: 'Fredoka', sans-serif;
+      font-size: 1rem; letter-spacing:.05em; padding: 7px 22px; border-radius: 30px;
+      text-decoration: none; border: 3px solid var(--yellow);
+      transition: background .2s, transform .15s;
+    }
+    .h-cta:hover { background: var(--orange); transform: scale(1.06); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 56px 24px 36px; text-align: center;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: #000 url('paisley-bg.png') center/cover;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center,
+        rgba(18,4,1,0) 0%,
+        rgba(18,4,1,0.35) 45%,
+        rgba(18,4,1,0.75) 100%);
+    }
+    /* Floating flowers */
+    .hero-fl { position: absolute; z-index: 1; pointer-events: none; opacity: .85; mix-blend-mode: screen; animation: bob 8s ease-in-out infinite; stroke: #FFF6DC; stroke-width: 4; stroke-linejoin: round; }
+    .hero-fl.a { top:-40px; left:-40px; width:280px; color:#F2BC1B; animation-delay:0s; }
+    .hero-fl.b { top:-30px; right:-40px; width:240px; color:#F2BC1B; transform:scaleX(-1); animation-delay:2s; }
+    .hero-fl.c { bottom:0; left:10px; width:180px; color:#E8620A; animation-delay:1.2s; }
+    .hero-fl.d { bottom:0; right:10px; width:200px; color:#E8620A; animation-delay:3s; }
+    @keyframes bob { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(-16px) rotate(9deg)} }
+    .hero-fl.b { animation-name: bob-r; }
+    @keyframes bob-r { 0%,100%{transform:translateY(0) rotate(0) scaleX(-1)} 50%{transform:translateY(-14px) rotate(-8deg) scaleX(-1)} }
+
+    .hero-eyebrow {
+      position:relative; z-index:2;
+      font-family:'Nunito',sans-serif; font-weight:900;
+      font-size:.75rem; letter-spacing:.26em; text-transform:uppercase;
+      color:var(--yellow); background:rgba(0,0,0,.35);
+      padding:5px 18px; border-radius:20px; margin-bottom:14px;
+    }
+    .hero-h1 {
+      position: relative; z-index: 2;
+      font-family: 'Bowlby One', sans-serif;
+      font-size: clamp(4.2rem, 15vw, 10rem);
+      color: var(--white);
+      line-height: .92; letter-spacing: .005em;
+      text-shadow:
+        4px 4px 0 var(--red),
+        8px 8px 0 var(--orange),
+        12px 12px 0 rgba(0,0,0,.45);
+    }
+    .hero-h1 .y { color: var(--yellow); }
+    .hero-script {
+      position:relative; z-index:2;
+      font-family:'Fredoka',sans-serif; font-size: clamp(1rem,3vw,1.7rem);
+      color: rgba(255,255,230,.8); margin-top: 12px;
+    }
+    /* Polaroid hero photo */
+    .hero-polaroid {
+      position:relative; z-index:2;
+      background: var(--white); padding: 12px 12px 52px;
+      border-radius:3px;
+      box-shadow: 8px 12px 60px rgba(0,0,0,.6), 0 0 0 2px rgba(255,255,200,.1);
+      transform: rotate(-1.5deg);
+      max-width: 700px; width: 90vw;
+      margin: 32px 0 20px;
+    }
+    .hero-polaroid img { width:100%; display:block; border-radius:2px; }
+    .pcaption { font-family:'Fredoka',sans-serif; font-size:1.3rem; color:#444; text-align:center; padding-top:10px; }
+
+    /* ── PRICE ── */
+    .price-sec {
+      background: var(--yellow); padding: 56px 24px 100px; text-align:center;
+      position:relative; overflow:hidden;
+    }
+    .price-wave { position:absolute; bottom:0; left:0; width:100%; height:80px; display:block; z-index:1; pointer-events:none; }
+    .price-starburst {
+      position:absolute; top:50%; left:50%;
+      transform:translate(-50%,-50%);
+      width:600px; opacity:.1;
+      animation: spin 28s linear infinite reverse;
+    }
+    @keyframes spin { to { transform: translate(-50%,-50%) rotate(360deg); } }
+    .price-label { font-family:'Nunito'; font-weight:900; font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:var(--dark); opacity:.55; }
+    .price-num {
+      font-family:'Bowlby One',sans-serif;
+      font-size: clamp(3rem,8vw,5.2rem); color:var(--dark); line-height:1; position:relative; z-index:1; letter-spacing:.005em;
+    }
+    .price-num sup { font-size:.42em; vertical-align:top; margin-top:.15em; opacity:.7; }
+    .price-tag { font-family:'Fredoka',sans-serif; font-size:1.05rem; color:var(--orange); margin-top:4px; }
+    .price-attr { font-family:'Nunito',sans-serif; font-size:.78rem; color:var(--dark); opacity:.55; margin-top:10px; position:relative; z-index:1; }
+    .price-call {
+      display:inline-block; margin-top:22px; position:relative; z-index:1;
+      background:var(--dark); color:var(--yellow); text-decoration:none;
+      font-family:'Fredoka',sans-serif; font-size:1rem; letter-spacing:.03em;
+      padding:10px 24px; border-radius:30px; border:3px solid var(--red);
+      transition:transform .15s, background .2s, color .2s;
+    }
+    .price-call:hover { background:var(--red); color:var(--white); transform:scale(1.05); }
+
+    /* ── WAVES ── */
+    .wave { display:block; width:100%; overflow:hidden; line-height:0; margin-bottom:-2px; }
+    .wave svg { display:block; width:100%; }
+
+    /* ── STORY ── */
+    .story-sec { background:var(--cream); padding:40px 24px 72px; position:relative; overflow:hidden; }
+    .fl-deco { position:absolute; pointer-events:none; }
+    .fl-deco.l { left:-80px; top:40px; width:320px; opacity:.1; }
+    .fl-deco.r { right:-80px; bottom:20px; width:280px; opacity:.1; }
+    .container { max-width:820px; margin:0 auto; position:relative; z-index:1; }
+    .eyebrow {
+      font-family:'Nunito'; font-weight:900; font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--green); margin-bottom:14px; display:flex; align-items:center; gap:10px;
+    }
+    .eyebrow::after { content:''; display:block; height:2px; width:36px; background:var(--green); border-radius:2px; }
+    .story-sec h2 { font-family:'Bungee',sans-serif; font-size:clamp(1.6rem,3.8vw,2.4rem); line-height:1.15; color:var(--dark); margin-bottom:26px; letter-spacing:-.005em; }
+    .story-sec h2 em { font-style:normal; color:var(--red); }
+    .story-sec p { font-size:1.06rem; line-height:1.85; color:#3a2208; max-width:640px; margin-bottom:1.1em; }
+    .story-badge {
+      display:inline-flex; align-items:center; gap:10px;
+      background:var(--dark); color:var(--yellow); border-radius:30px;
+      padding:10px 22px; margin-top:14px;
+      font-family:'Fredoka',sans-serif; font-size:1.05rem;
+    }
+
+    /* ── ARCH STRIP ── */
+    .arch-strip { display:block; width:100%; overflow:hidden; background:#000; line-height:0; }
+    #arch-root { display:block; width:100%; height:320px; }
+
+    /* ── SPECS ── */
+    .specs-sec { background:var(--cream); padding:64px 24px 72px; position:relative; overflow:hidden; }
+    .specs-sec h2 { font-family:'Bungee',sans-serif; font-size:clamp(1.8rem,4vw,2.6rem); color:var(--red); text-align:center; margin-bottom:36px; letter-spacing:.01em; }
+    .specs-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(155px,1fr)); gap:14px; max-width:820px; margin:0 auto; }
+    .spec-badge {
+      background:var(--white); border:3px solid var(--orange);
+      border-radius:18px; padding:22px 16px; text-align:center;
+      transition:background .2s, border-color .2s, transform .18s;
+      box-shadow:0 4px 0 rgba(196,16,16,.12);
+    }
+    .spec-badge:hover { background:#FFFBED; border-color:var(--red); transform:translateY(-5px); }
+    .spec-badge .lbl { font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--green); font-weight:900; margin-bottom:8px; }
+    .spec-badge .val { font-family:'Fredoka',sans-serif; font-size:1.35rem; color:var(--dark); line-height:1.2; }
+    .specs-vin { max-width:820px; margin:24px auto 0; text-align:center; font-family:'Nunito',sans-serif; font-size:.78rem; letter-spacing:.08em; color:var(--dark); opacity:.55; }
+    .specs-vin code { font-family:ui-monospace,'SF Mono',Menlo,monospace; letter-spacing:.04em; }
+
+    /* ── GALLERY ── */
+    .gallery-sec { background:var(--orange); padding:68px 24px 76px; position:relative; overflow:hidden; }
+    .gallery-sec h2 { font-family:'Bungee',sans-serif; font-size:clamp(1.7rem,3.6vw,2.4rem); color:var(--white); text-align:center; margin-bottom:36px; text-shadow:3px 3px 0 rgba(0,0,0,.2); letter-spacing:.01em; }
+    .photo-flex { display:flex; flex-wrap:wrap; justify-content:center; gap:22px; max-width:940px; margin:0 auto; }
+    .polaroid {
+      background:var(--white); padding:10px 10px 46px; border-radius:2px;
+      box-shadow:4px 8px 28px rgba(0,0,0,.3); flex:0 0 260px;
+      transition:transform .22s, box-shadow .22s; position:relative;
+    }
+    .polaroid:nth-child(1){transform:rotate(-2.5deg)}
+    .polaroid:nth-child(2){transform:rotate(1.8deg)}
+    .polaroid:nth-child(3){transform:rotate(-1.2deg)}
+    .polaroid:nth-child(4){transform:rotate(2.2deg)}
+    .polaroid:nth-child(5){transform:rotate(-1.8deg)}
+    .polaroid:nth-child(6){transform:rotate(1.5deg)}
+    .polaroid:hover { transform:rotate(0) scale(1.06) !important; box-shadow:10px 18px 50px rgba(0,0,0,.35); z-index:3; }
+    .polaroid img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+    .plabel { font-family:'Fredoka',sans-serif; font-size:.9rem; text-align:center; color:#555; margin-top:8px; }
+
+    /* ── CONTACT ── */
+    .contact-sec { position:relative; overflow:hidden; padding:140px 24px 90px; text-align:center; }
+    .contact-wave { position:absolute; top:0; left:0; width:100%; height:80px; display:block; z-index:1; pointer-events:none; }
+    .contact-bg { position:absolute; inset:0; z-index:0; background:#000 url('paisley-bg.png') center/cover; }
+    .contact-bg::after {
+      content:''; position:absolute; inset:0;
+      background: radial-gradient(ellipse at center,
+        rgba(14,4,28,0) 0%,
+        rgba(14,4,28,0.40) 45%,
+        rgba(14,4,28,0.80) 100%);
+    }
+    .contact-sec h2 {
+      position:relative; z-index:1;
+      font-family:'Bungee',sans-serif;
+      font-size:clamp(2rem,5vw,3.4rem); color:var(--white); line-height:1.15; margin-bottom:8px; letter-spacing:.01em;
+    }
+    .contact-sec h2 em { font-style:normal; color:var(--yellow); }
+    .contact-intro { position:relative; z-index:1; font-family:'Fredoka',sans-serif; font-size:1.1rem; color:rgba(255,255,230,.7); margin-bottom:40px; }
+    .contact-logistics { position:relative; z-index:1; font-family:'Fredoka',sans-serif; font-size:.95rem; color:rgba(255,255,230,.65); line-height:1.7; max-width:580px; margin:32px auto 0; }
+    .cards { position:relative; z-index:1; display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:580px; margin:0 auto; }
+    .card {
+      background:var(--white); border-radius:22px; padding:28px 36px;
+      text-decoration:none; flex:1 1 200px;
+      border:4px solid transparent;
+      box-shadow:0 6px 24px rgba(0,0,0,.3);
+      transition:transform .2s, border-color .2s, box-shadow .2s;
+    }
+    .card:hover { transform:translateY(-8px) rotate(-1.5deg); border-color:var(--yellow); box-shadow:0 18px 48px rgba(0,0,0,.4); }
+    .ct { font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; color:#aaa; margin-bottom:6px; }
+    .cv { font-family:'Fredoka',sans-serif; font-size:1.5rem; color:var(--dark); display:block; }
+    .cn { font-family:'Nunito'; font-size:.82rem; color:var(--green); margin-top:4px; font-weight:700; }
+
+    /* ── DISCLOSURE ── */
+    .disclosure-sec {
+      background:var(--cream); padding:34px 24px 40px;
+      border-top:2px dashed rgba(30,11,2,.18);
+    }
+    .disclosure {
+      max-width:680px; margin:0 auto; text-align:center;
+      font-family:'Nunito',sans-serif; font-size:.82rem; line-height:1.7;
+      color:rgba(30,11,2,.62);
+    }
+    .disclosure strong { color:var(--dark); font-weight:900; }
+    .disclosure a { color:var(--red); font-weight:700; text-decoration:none; border-bottom:1px solid rgba(196,16,16,.3); }
+    .disclosure a:hover { border-bottom-color:var(--red); }
+
+    /* ── FOOTER ── */
+    footer {
+      background:var(--dark); color:rgba(255,255,200,.35);
+      text-align:center; padding:20px 24px;
+      font-size:.76rem; letter-spacing:.06em;
+      border-top:5px solid var(--yellow);
+    }
+
+    @media(max-width:620px){ .photo-flex .polaroid { flex:0 0 calc(50% - 12px); } }
+    @media(max-width:400px){ .photo-flex .polaroid { flex:0 0 100%; } }
+  </style>
+</head>
+<body>
+
+<!-- Flower symbol def -->
+<svg style="display:none">
+  <symbol id="flower" viewBox="0 0 200 200">
+    <g transform="translate(100,100)" fill="currentColor">
+      <ellipse rx="26" ry="72" transform="rotate(0)"/>
+      <ellipse rx="26" ry="72" transform="rotate(30)"/>
+      <ellipse rx="26" ry="72" transform="rotate(60)"/>
+      <ellipse rx="26" ry="72" transform="rotate(90)"/>
+      <ellipse rx="26" ry="72" transform="rotate(120)"/>
+      <ellipse rx="26" ry="72" transform="rotate(150)"/>
+      <circle r="38"/>
+    </g>
+  </symbol>
+  <symbol id="starburst" viewBox="0 0 200 200">
+    <g transform="translate(100,100)" fill="currentColor">
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(0)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(12)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(24)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(36)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(48)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(60)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(72)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(84)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(96)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(108)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(120)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(132)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(144)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(156)"/>
+      <rect x="-3" y="-96" width="6" height="192" transform="rotate(168)"/>
+      <circle r="22"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="h-logo"><span class="h-dot"></span> 2010 VW Beetle</div>
+  <a class="h-cta" href="#contact">Talk to Donna ↓</a>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <svg class="hero-fl a" viewBox="0 0 200 200"><use href="#flower"/></svg>
+  <svg class="hero-fl b" viewBox="0 0 200 200"><use href="#flower"/></svg>
+  <svg class="hero-fl c" viewBox="0 0 200 200"><use href="#flower"/></svg>
+  <svg class="hero-fl d" viewBox="0 0 200 200"><use href="#flower"/></svg>
+
+  <div class="hero-eyebrow">🌸 &nbsp; For Sale by Owner · Clayton, Ohio &nbsp; 🌸</div>
+  <h1 class="hero-h1">LITTLE<br><span class="y">RED.</span></h1>
+  <p class="hero-script">A groovy little Beetle looking for her next adventure.</p>
+
+  <div class="hero-polaroid">
+    <img src="IMG_5265.avif" alt="Little Red — 2010 VW Beetle, front view" />
+    <p class="pcaption">she's a real one ✨</p>
+  </div>
+</section>
+
+<!-- ── PRICE ── -->
+<div class="price-sec">
+  <svg class="price-starburst" viewBox="0 0 400 400"><use href="#starburst" color="#1E0B02" x="100" y="100" width="200" height="200"/></svg>
+  <div class="price-label">Asking Price</div>
+  <div class="price-num"><sup>$</sup>6,995</div>
+  <div class="price-tag">110,435 miles &nbsp;·&nbsp; clean title &nbsp;·&nbsp; no dealer fees, baby</div>
+  <div class="price-attr">NHTSA VIN check: 0 open recalls · verified May 28, 2026</div>
+  <a class="price-call" href="tel:9376843260">📞 Call or text Donna · (937) 684-3260</a>
+  <svg class="price-wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,20 C300,70 600,0 900,50 C1050,70 1150,30 1200,20 L1200,80 L0,80 Z" fill="#FFF6DC"/></svg>
+</div>
+
+<!-- ── STORY ── -->
+<section class="story-sec">
+  <svg class="fl-deco l" viewBox="0 0 200 200"><use href="#flower" color="#4A7C2F"/></svg>
+  <svg class="fl-deco r" viewBox="0 0 200 200"><use href="#flower" color="#C41010"/></svg>
+  <div class="container">
+    <p class="eyebrow">The story</p>
+    <h2>Barely driven.<br><em>Excellently</em> documented.</h2>
+    <p>
+      Donna bought this little red Beetle in May 2022 with 108,451 miles on the clock. In
+      the three years since, she's added right around 2,000 miles. That's it. This car has lived
+      a quiet, charmed life: local errands, around-town drives, and a garage to sleep in every night.
+    </p>
+    <p>
+      Donna says the documentation on this car is excellent — she's kept a clean record of what's
+      been done. The interior is clean, the paint is cherry red and shining, and there's nothing
+      wrong with it that she knows of.
+    </p>
+    <p>
+      The honest reason it's for sale: it just sits more than it gets driven. This car deserves
+      someone who will actually use it — a great second car, a college kid's first ride, or
+      anyone who just appreciates a Beetle done right. If you want something dependable,
+      distinctive, and just a little bit <em>fun</em> — this is your moment.
+    </p>
+    <div class="story-badge">🚗 &nbsp; Purchased May 2022 at 108,451 mi &nbsp;·&nbsp; Only ~2,000 miles added</div>
+  </div>
+</section>
+
+<!-- ── ARCH STRIP (generated by JS) ── -->
+<div class="arch-strip">
+  <svg id="arch-root" viewBox="0 0 2048 320" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+
+<!-- ── SPECS ── -->
+<section class="specs-sec">
+  <h2>The deets ✌️</h2>
+  <div class="specs-grid">
+    <div class="spec-badge"><div class="lbl">Year</div><div class="val">2010</div></div>
+    <div class="spec-badge"><div class="lbl">Engine</div><div class="val">2.5L 5-cyl</div></div>
+    <div class="spec-badge"><div class="lbl">Transmission</div><div class="val">Automatic</div></div>
+    <div class="spec-badge"><div class="lbl">Drivetrain</div><div class="val">FWD</div></div>
+    <div class="spec-badge"><div class="lbl">Mileage</div><div class="val">110,435</div></div>
+    <div class="spec-badge"><div class="lbl">MPG</div><div class="val">20 / 28</div></div>
+    <div class="spec-badge"><div class="lbl">Color</div><div class="val">Red 🍒</div></div>
+    <div class="spec-badge"><div class="lbl">Interior</div><div class="val">Tan Leather</div></div>
+    <div class="spec-badge"><div class="lbl">Sunroof</div><div class="val">Yes ☀️</div></div>
+    <div class="spec-badge"><div class="lbl">Title</div><div class="val">Clean ✓</div></div>
+    <div class="spec-badge"><div class="lbl">Records</div><div class="val">Excellent</div></div>
+    <div class="spec-badge"><div class="lbl">NHTSA Recalls</div><div class="val">0 Open ✓</div></div>
+    <div class="spec-badge"><div class="lbl">Smoke / Pets</div><div class="val">None 🌿</div></div>
+    <div class="spec-badge"><div class="lbl">Owned</div><div class="val">Since May '22 · +2k mi</div></div>
+    <div class="spec-badge"><div class="lbl">Location</div><div class="val">Clayton, OH</div></div>
+  </div>
+  <p class="specs-vin">VIN &nbsp; <code>3VWRG3AG3AM017144</code> &nbsp; (run your own report)</p>
+</section>
+
+<!-- wave to orange -->
+<div class="wave" style="background:var(--cream)">
+  <svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,30 C200,70 400,10 600,50 C800,80 1000,20 1200,30 L1200,80 L0,80 Z" fill="#E8620A"/></svg>
+</div>
+
+<!-- ── GALLERY ── -->
+<section class="gallery-sec" id="gallery">
+  <h2>Take a peek 📸</h2>
+  <div class="photo-flex">
+    <div class="polaroid">
+      <img src="IMG_5265.avif" alt="Front 3/4 view" />
+      <p class="plabel">front and center 🌟</p>
+    </div>
+    <div class="polaroid">
+      <img src="odometer.avif" alt="Odometer reading 110,435 miles" />
+      <p class="plabel">110,435 mi · proof 📏</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMG_5266.avif" alt="Rear 3/4 view" />
+      <p class="plabel">lookin' back 😎</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMG_5267.avif" alt="Rear straight on" />
+      <p class="plabel">cute lil' rear 🍑</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMG_5268.avif" alt="Interior" />
+      <p class="plabel">clean inside 🌿</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMG_5269.avif" alt="Front straight on" />
+      <p class="plabel">staring you down 👀</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-sec" id="contact">
+  <div class="contact-bg"></div>
+  <svg class="contact-wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,60 C250,10 500,70 750,30 C1000,0 1150,50 1200,60 L1200,0 L0,0 Z" fill="#E8620A"/></svg>
+  <h2>Let's <em>rap,</em><br>baby. 🕺</h2>
+  <p class="contact-intro">Quickest reply by text — evenings and weekends are best.</p>
+  <div class="cards">
+    <a class="card" href="tel:9376843260">
+      <div class="ct">Call or Text</div>
+      <span class="cv">(937) 684-3260</span>
+      <div class="cn">Donna</div>
+    </a>
+    <a class="card" href="mailto:ddubel@aol.com">
+      <div class="ct">Email</div>
+      <span class="cv">ddubel@aol.com</span>
+      <div class="cn">Donna</div>
+    </a>
+  </div>
+  <p class="contact-logistics">Located in Clayton, OH · happy to meet at a public location or in the driveway · cash or cashier's check at sale.</p>
+</section>
+
+<section class="disclosure-sec">
+  <p class="disclosure">
+    <strong>A note from the website developer.</strong> This site was built as a favor by
+    <a href="https://steveryherd.com/" target="_blank" rel="noopener">Steve Ryherd</a>,
+    who works at <a href="https://www.josephairporttoyota.com/" target="_blank" rel="noopener">Joseph Airport Toyota</a>
+    by day. Neither Steve nor the dealership has any involvement in this private sale — this is
+    a personal web-development favor for the seller, full stop. All questions, offers, viewings,
+    and paperwork go directly to Donna at the number above.
+  </p>
+</section>
+
+<footer>
+  <span style="color:rgba(255,255,200,.6)">2010 VW Beetle · For Sale by Owner</span>
+  &nbsp;·&nbsp; Clayton, OH &nbsp;·&nbsp; Private party — no dealer nonsense 🌼
+</footer>
+
+<script>
+/* ── ARCH PATTERN (adapted from CodePen) ── */
+(function() {
+  const xmlns = 'http://www.w3.org/2000/svg';
+  const root  = document.getElementById('arch-root');
+  if (!root) return;
+
+  const colors1 = ['#235357','#458175','#6b8c75','#e4d3a0','#e79e5f','#e56e3e','#b9421d'];
+  const colors2 = [...colors1].reverse();
+  const diameter  = 256;
+  const radius    = diameter * 0.5;
+  const sizeDelta = diameter / (colors1.length - 0.5);
+
+  function pathDesc(data) {
+    return data.map(v => v[0] + v.slice(1).join(',')).join(' ');
+  }
+
+  function makeMidMask() {
+    const defs = document.createElementNS(xmlns, 'defs');
+    const mask = document.createElementNS(xmlns, 'mask');
+    mask.setAttribute('id', 'mid-mask');
+    const rect = document.createElementNS(xmlns, 'rect');
+    rect.setAttribute('x', -radius); rect.setAttribute('y', -radius);
+    rect.setAttribute('width', diameter * 2); rect.setAttribute('height', diameter);
+    rect.setAttribute('fill', '#fff');
+    const path = document.createElementNS(xmlns, 'path');
+    const r = radius;
+    path.setAttribute('fill', '#000');
+    path.setAttribute('d', pathDesc([
+      ['M',0,-r-1],['a',r,r,0,0,0,diameter,0],
+      ['M',0,r+1],['a',r,r,0,0,1,diameter,0],['z']
+    ]));
+    mask.appendChild(rect); mask.appendChild(path);
+    defs.appendChild(mask); root.appendChild(defs);
+  }
+
+  function createGroup(colors) {
+    const g = document.createElementNS(xmlns, 'g');
+    colors.forEach((color, i) => {
+      const d = diameter - i * sizeDelta;
+      const r = d * 0.5;
+      const path = document.createElementNS(xmlns, 'path');
+      path.setAttribute('fill', color);
+      path.setAttribute('d', pathDesc([
+        ['M',0,-r],['a',r,r,0,0,0,0,d],['l',diameter,0],['a',r,r,0,0,0,0,-d],['z']
+      ]));
+      g.appendChild(path);
+    });
+    return g;
+  }
+
+  function placeGroup(group, x, y, deg, useMask) {
+    const dupe = group.cloneNode(true);
+    dupe.setAttribute('transform', `translate(${x},${y}) rotate(${deg})`);
+    if (useMask) dupe.setAttribute('mask', 'url(#mid-mask)');
+    root.appendChild(dupe);
+  }
+
+  function tile(group, xOff, yOff, deg, useMask) {
+    for (let x = 0; x < 6; x++)
+      for (let y = 0; y < 3; y++)
+        placeGroup(group, xOff + x * diameter * 2, yOff + y * diameter * 2, deg, useMask);
+  }
+
+  const g1 = createGroup(colors1);
+  const g2 = createGroup(colors2);
+  makeMidMask();
+  tile(g1,  diameter, -radius,  90, false);
+  tile(g2,  -radius,       0,   0, false);
+  tile(g1,       0,   radius,  90, false);
+  tile(g2,   radius,  diameter,  0,  true);
+})();
+</script>
+</body>
+</html>

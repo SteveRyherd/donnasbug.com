@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Source photos (kept locally as backup; served as AVIF)
+IMG_*.jpeg
+IMG_*.jpg
+odometer.heic
+
+# Misc local-only assets
+rainbow.png
+
+# Backups of older index versions
+*.bak
+index_*.html
+
+# Dev exploration / scratch files
+font-compare.html
