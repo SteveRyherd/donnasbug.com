@@ -18,6 +18,12 @@
   <meta name="twitter:image" content="https://donnasbug.com/og-card.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preload Bowlby One (the big display font for the headline + price) so it's ready
+       before first paint and doesn't reflow-shift the hero/price when it swaps in.
+       NOTE: this gstatic URL is tied to the font version (v25); if Google bumps it the
+       preload will 404 silently and fall back to the swap behavior. Self-hosting removes that risk. -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="https://fonts.gstatic.com/s/bowlbyone/v25/taiPGmVuC4y96PFeqp8sqomI_L8zYK8.woff2" />
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -116,7 +122,7 @@
       max-width: 700px; width: 90vw;
       margin: 32px 0 20px;
     }
-    .hero-polaroid img { width:100%; display:block; border-radius:2px; }
+    .hero-polaroid img { width:100%; aspect-ratio:4/3; display:block; border-radius:2px; }
     .pcaption { font-family:'Fredoka',sans-serif; font-size:1.3rem; color:#444; text-align:center; padding-top:10px; }
 
     /* ── PRICE ── */
