@@ -74,8 +74,8 @@
     }
     /* Floating flowers */
     .hero-fl { position: absolute; z-index: 1; pointer-events: none; opacity: .85; mix-blend-mode: screen; animation: bob 8s ease-in-out infinite; stroke: #FFF6DC; stroke-width: 4; stroke-linejoin: round; }
-    .hero-fl.a { top:-40px; left:-40px; width:280px; color:#F2BC1B; animation-delay:0s; }
-    .hero-fl.b { top:-30px; right:-40px; width:240px; color:#F2BC1B; transform:scaleX(-1); animation-delay:2s; }
+    .hero-fl.a { top:clamp(-56px, 27vw - 164px, 106px); left:clamp(-130px, 33.67vw - 264.7px, 72px); width:280px; color:#F2BC1B; animation-delay:0s; }
+    .hero-fl.b { top:clamp(138px, 186.33px - 4.83vw, 167px); right:clamp(-71px, 23.83vw - 166.33px, 72px); width:240px; color:#F2BC1B; transform:scaleX(-1); animation-delay:2s; }
     .hero-fl.c { bottom:0; left:10px; width:180px; color:#E8620A; animation-delay:1.2s; }
     .hero-fl.d { bottom:0; right:10px; width:200px; color:#E8620A; animation-delay:3s; }
     @keyframes bob { 0%,100%{transform:translateY(0) rotate(0)} 50%{transform:translateY(-16px) rotate(9deg)} }
